@@ -19,6 +19,8 @@
 		345E26512B0E802800A9EF7A /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26502B0E802800A9EF7A /* LoginAction.swift */; };
 		345E26532B0E812700A9EF7A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26522B0E812700A9EF7A /* LoginViewModel.swift */; };
 		345E26572B0E81EC00A9EF7A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26562B0E81EC00A9EF7A /* LoginScreen.swift */; };
+		345E265A2B0E985A00A9EF7A /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 345E26592B0E985A00A9EF7A /* SwiftKeychainWrapper */; };
+		345E265C2B0E98B000A9EF7A /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E265B2B0E98B000A9EF7A /* Auth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,7 @@
 		345E26502B0E802800A9EF7A /* LoginAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
 		345E26522B0E812700A9EF7A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		345E26562B0E81EC00A9EF7A /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		345E265B2B0E98B000A9EF7A /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345E265A2B0E985A00A9EF7A /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				345E26222B0E41D400A9EF7A /* StringExtensions.swift */,
+				345E265B2B0E98B000A9EF7A /* Auth.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -317,6 +322,9 @@
 			dependencies = (
 			);
 			name = SwiftUIBlueprint;
+			packageProductDependencies = (
+				345E26592B0E985A00A9EF7A /* SwiftKeychainWrapper */,
+			);
 			productName = SwiftUIBlueprint;
 			productReference = 345E26042B0E372E00A9EF7A /* SwiftUIBlueprint.app */;
 			productType = "com.apple.product-type.application";
@@ -346,6 +354,9 @@
 				de,
 			);
 			mainGroup = 345E25FB2B0E372E00A9EF7A;
+			packageReferences = (
+				345E26582B0E985A00A9EF7A /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = 345E26052B0E372E00A9EF7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -403,6 +414,7 @@
 				345E26572B0E81EC00A9EF7A /* LoginScreen.swift in Sources */,
 				345E26512B0E802800A9EF7A /* LoginAction.swift in Sources */,
 				345E26532B0E812700A9EF7A /* LoginViewModel.swift in Sources */,
+				345E265C2B0E98B000A9EF7A /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +638,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		345E26582B0E985A00A9EF7A /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		345E26592B0E985A00A9EF7A /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 345E26582B0E985A00A9EF7A /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 345E25FC2B0E372E00A9EF7A /* Project object */;
 }

@@ -14,3 +14,4 @@ I am not the author of the code nor the tutorial.
 
 * (Part 4 - https://medium.com/mop-developers/build-your-first-swiftui-app-part-4-set-up-a-mock-server-with-postman-dc20b260b916)[https://medium.com/mop-developers/build-your-first-swiftui-app-part-4-set-up-a-mock-server-with-postman-dc20b260b916]
 
+* (Part 5 - https://medium.com/mop-developers/build-your-first-swiftui-app-part-5-handling-authorization-95f49cdb0b29)[https://medium.com/mop-developers/build-your-first-swiftui-app-part-5-handling-authorization-95f49cdb0b29]
