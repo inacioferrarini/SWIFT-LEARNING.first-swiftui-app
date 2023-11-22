@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  SwiftUIBlueprint
+
+  Created by José Inácio Athayde Ferrarini on 22/11/23.
+  
+*/
+
+"ContentView.WelcomeMessage" = "Good morning, %@!";
