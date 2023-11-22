@@ -10,3 +10,4 @@ I am not the author of the code nor the tutorial.
 
 * (Part 2 - https://medium.com/mop-developers/build-your-first-swiftui-app-part-2-project-architecture-c6e3e62c6457)[https://medium.com/mop-developers/build-your-first-swiftui-app-part-2-project-architecture-c6e3e62c6457]
 
+* (Part 3 - https://medium.com/mop-developers/build-your-first-swiftui-app-part-3-create-the-login-screen-334d90ef1763)[https://medium.com/mop-developers/build-your-first-swiftui-app-part-3-create-the-login-screen-334d90ef1763]

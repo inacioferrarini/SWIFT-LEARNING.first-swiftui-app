@@ -14,6 +14,11 @@
 		345E261B2B0E3E5400A9EF7A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 345E261D2B0E3E5400A9EF7A /* Localizable.strings */; };
 		345E26232B0E41D400A9EF7A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26222B0E41D400A9EF7A /* StringExtensions.swift */; };
 		345E26262B0E44B900A9EF7A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 345E26252B0E44B900A9EF7A /* .swiftlint.yml */; };
+		345E264D2B0E7F3D00A9EF7A /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E264C2B0E7F3D00A9EF7A /* LoginRequest.swift */; };
+		345E264F2B0E7F8800A9EF7A /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E264E2B0E7F8800A9EF7A /* LoginResponse.swift */; };
+		345E26512B0E802800A9EF7A /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26502B0E802800A9EF7A /* LoginAction.swift */; };
+		345E26532B0E812700A9EF7A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26522B0E812700A9EF7A /* LoginViewModel.swift */; };
+		345E26572B0E81EC00A9EF7A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26562B0E81EC00A9EF7A /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		345E261E2B0E3E9100A9EF7A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		345E26222B0E41D400A9EF7A /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		345E26252B0E44B900A9EF7A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		345E264C2B0E7F3D00A9EF7A /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		345E264E2B0E7F8800A9EF7A /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		345E26502B0E802800A9EF7A /* LoginAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
+		345E26522B0E812700A9EF7A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		345E26562B0E81EC00A9EF7A /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +247,7 @@
 		345E263B2B0E76BD00A9EF7A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				345E26522B0E812700A9EF7A /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -244,6 +255,8 @@
 		345E263C2B0E76BD00A9EF7A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				345E264C2B0E7F3D00A9EF7A /* LoginRequest.swift */,
+				345E264E2B0E7F8800A9EF7A /* LoginResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -251,6 +264,7 @@
 		345E263D2B0E76BD00A9EF7A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				345E26562B0E81EC00A9EF7A /* LoginScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -258,6 +272,7 @@
 		345E263E2B0E76BD00A9EF7A /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				345E26502B0E802800A9EF7A /* LoginAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -391,6 +406,11 @@
 				345E26232B0E41D400A9EF7A /* StringExtensions.swift in Sources */,
 				345E260A2B0E372E00A9EF7A /* ContentView.swift in Sources */,
 				345E26082B0E372E00A9EF7A /* SwiftUIBlueprintApp.swift in Sources */,
+				345E264D2B0E7F3D00A9EF7A /* LoginRequest.swift in Sources */,
+				345E264F2B0E7F8800A9EF7A /* LoginResponse.swift in Sources */,
+				345E26572B0E81EC00A9EF7A /* LoginScreen.swift in Sources */,
+				345E26512B0E802800A9EF7A /* LoginAction.swift in Sources */,
+				345E26532B0E812700A9EF7A /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
