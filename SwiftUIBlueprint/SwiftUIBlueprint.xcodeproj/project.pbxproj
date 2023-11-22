@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		345E26082B0E372E00A9EF7A /* SwiftUIBlueprintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26072B0E372E00A9EF7A /* SwiftUIBlueprintApp.swift */; };
 		345E260A2B0E372E00A9EF7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26092B0E372E00A9EF7A /* ContentView.swift */; };
-		345E260C2B0E373000A9EF7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345E260B2B0E373000A9EF7A /* Assets.xcassets */; };
+		345E260C2B0E373000A9EF7A /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345E260B2B0E373000A9EF7A /* AppIcon.xcassets */; };
 		345E260F2B0E373000A9EF7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345E260E2B0E373000A9EF7A /* Preview Assets.xcassets */; };
 		345E261B2B0E3E5400A9EF7A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 345E261D2B0E3E5400A9EF7A /* Localizable.strings */; };
 		345E26232B0E41D400A9EF7A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26222B0E41D400A9EF7A /* StringExtensions.swift */; };
@@ -20,7 +20,7 @@
 		345E26042B0E372E00A9EF7A /* SwiftUIBlueprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBlueprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E26072B0E372E00A9EF7A /* SwiftUIBlueprintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBlueprintApp.swift; sourceTree = "<group>"; };
 		345E26092B0E372E00A9EF7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		345E260B2B0E373000A9EF7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		345E260B2B0E373000A9EF7A /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		345E260E2B0E373000A9EF7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		345E261C2B0E3E5400A9EF7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		345E261E2B0E3E9100A9EF7A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -59,11 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				345E261F2B0E41A000A9EF7A /* Code */,
-				345E26072B0E372E00A9EF7A /* SwiftUIBlueprintApp.swift */,
-				345E26092B0E372E00A9EF7A /* ContentView.swift */,
-				345E26172B0E3DE800A9EF7A /* Resources */,
+				345E26462B0E781500A9EF7A /* Config */,
+				345E26472B0E785100A9EF7A /* Resources */,
 				345E260D2B0E373000A9EF7A /* Preview Content */,
-				345E26252B0E44B900A9EF7A /* .swiftlint.yml */,
+				345E26172B0E3DE800A9EF7A /* SupportingFiles */,
 			);
 			path = SwiftUIBlueprint;
 			sourceTree = "<group>";
@@ -76,13 +75,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		345E26172B0E3DE800A9EF7A /* Resources */ = {
+		345E26172B0E3DE800A9EF7A /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				345E26182B0E3E0200A9EF7A /* Localization */,
-				345E260B2B0E373000A9EF7A /* Assets.xcassets */,
+				345E26092B0E372E00A9EF7A /* ContentView.swift */,
+				345E26072B0E372E00A9EF7A /* SwiftUIBlueprintApp.swift */,
 			);
-			path = Resources;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		345E26182B0E3E0200A9EF7A /* Localization */ = {
@@ -96,6 +96,7 @@
 		345E261F2B0E41A000A9EF7A /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				345E26272B0E73A800A9EF7A /* Features */,
 				345E26202B0E41AC00A9EF7A /* Utilities */,
 			);
 			path = Code;
@@ -115,6 +116,181 @@
 				345E26222B0E41D400A9EF7A /* StringExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		345E26272B0E73A800A9EF7A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				345E262E2B0E76BD00A9EF7A /* Common */,
+				345E263A2B0E76BD00A9EF7A /* Login */,
+				345E26342B0E76BD00A9EF7A /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		345E262E2B0E76BD00A9EF7A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				345E26322B0E76BD00A9EF7A /* Actions */,
+				345E26302B0E76BD00A9EF7A /* Models */,
+				345E26312B0E76BD00A9EF7A /* Screens */,
+				345E262F2B0E76BD00A9EF7A /* ViewModels */,
+				345E26332B0E76BD00A9EF7A /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		345E262F2B0E76BD00A9EF7A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		345E26302B0E76BD00A9EF7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		345E26312B0E76BD00A9EF7A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		345E26322B0E76BD00A9EF7A /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		345E26332B0E76BD00A9EF7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		345E26342B0E76BD00A9EF7A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				345E26382B0E76BD00A9EF7A /* Actions */,
+				345E26362B0E76BD00A9EF7A /* Models */,
+				345E26372B0E76BD00A9EF7A /* Screens */,
+				345E26352B0E76BD00A9EF7A /* ViewModels */,
+				345E26392B0E76BD00A9EF7A /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		345E26352B0E76BD00A9EF7A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		345E26362B0E76BD00A9EF7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		345E26372B0E76BD00A9EF7A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		345E26382B0E76BD00A9EF7A /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		345E26392B0E76BD00A9EF7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		345E263A2B0E76BD00A9EF7A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				345E263E2B0E76BD00A9EF7A /* Actions */,
+				345E263C2B0E76BD00A9EF7A /* Models */,
+				345E263D2B0E76BD00A9EF7A /* Screens */,
+				345E263B2B0E76BD00A9EF7A /* ViewModels */,
+				345E263F2B0E76BD00A9EF7A /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		345E263B2B0E76BD00A9EF7A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		345E263C2B0E76BD00A9EF7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		345E263D2B0E76BD00A9EF7A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		345E263E2B0E76BD00A9EF7A /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		345E263F2B0E76BD00A9EF7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		345E26462B0E781500A9EF7A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				345E26252B0E44B900A9EF7A /* .swiftlint.yml */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		345E26472B0E785100A9EF7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				345E26492B0E7A6F00A9EF7A /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		345E26492B0E7A6F00A9EF7A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				345E260B2B0E373000A9EF7A /* AppIcon.xcassets */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +356,7 @@
 				345E26262B0E44B900A9EF7A /* .swiftlint.yml in Resources */,
 				345E260F2B0E373000A9EF7A /* Preview Assets.xcassets in Resources */,
 				345E261B2B0E3E5400A9EF7A /* Localizable.strings in Resources */,
-				345E260C2B0E373000A9EF7A /* Assets.xcassets in Resources */,
+				345E260C2B0E373000A9EF7A /* AppIcon.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +379,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --config \"$SRCROOT/SwiftUIBlueprint/Config/.swiftlint.yml\"\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
