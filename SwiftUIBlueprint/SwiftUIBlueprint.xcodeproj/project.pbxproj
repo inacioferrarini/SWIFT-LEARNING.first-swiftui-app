@@ -115,17 +115,9 @@
 		345E26202B0E41AC00A9EF7A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				345E26212B0E41BB00A9EF7A /* Extensions */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		345E26212B0E41BB00A9EF7A /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
 				345E26222B0E41D400A9EF7A /* StringExtensions.swift */,
 			);
-			path = Extensions;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		345E26272B0E73A800A9EF7A /* Features */ = {
