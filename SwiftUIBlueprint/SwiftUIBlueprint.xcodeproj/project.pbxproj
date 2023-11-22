@@ -21,6 +21,12 @@
 		345E26572B0E81EC00A9EF7A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26562B0E81EC00A9EF7A /* LoginScreen.swift */; };
 		345E265A2B0E985A00A9EF7A /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 345E26592B0E985A00A9EF7A /* SwiftKeychainWrapper */; };
 		345E265C2B0E98B000A9EF7A /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E265B2B0E98B000A9EF7A /* Auth.swift */; };
+		345E265E2B0E9E1F00A9EF7A /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E265D2B0E9E1F00A9EF7A /* HomeScreen.swift */; };
+		345E26602B0E9E7A00A9EF7A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E265F2B0E9E7A00A9EF7A /* HomeViewModel.swift */; };
+		345E26642B0EA01E00A9EF7A /* RootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26632B0EA01E00A9EF7A /* RootScreen.swift */; };
+		345E26662B0EA18A00A9EF7A /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26652B0EA18A00A9EF7A /* Credentials.swift */; };
+		345E26682B0EA19600A9EF7A /* KeychainKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26672B0EA19600A9EF7A /* KeychainKey.swift */; };
+		345E266B2B0EA20F00A9EF7A /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E266A2B0EA20F00A9EF7A /* MainButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,12 @@
 		345E26522B0E812700A9EF7A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		345E26562B0E81EC00A9EF7A /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		345E265B2B0E98B000A9EF7A /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		345E265D2B0E9E1F00A9EF7A /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		345E265F2B0E9E7A00A9EF7A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		345E26632B0EA01E00A9EF7A /* RootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScreen.swift; sourceTree = "<group>"; };
+		345E26652B0EA18A00A9EF7A /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		345E26672B0EA19600A9EF7A /* KeychainKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKey.swift; sourceTree = "<group>"; };
+		345E266A2B0EA20F00A9EF7A /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +140,7 @@
 		345E26272B0E73A800A9EF7A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				345E26612B0EA00300A9EF7A /* Root */,
 				345E262E2B0E76BD00A9EF7A /* Common */,
 				345E263A2B0E76BD00A9EF7A /* Login */,
 				345E26342B0E76BD00A9EF7A /* Home */,
@@ -142,6 +155,7 @@
 				345E26302B0E76BD00A9EF7A /* Models */,
 				345E26312B0E76BD00A9EF7A /* Screens */,
 				345E262F2B0E76BD00A9EF7A /* ViewModels */,
+				345E26692B0EA1F100A9EF7A /* ViewModifiers */,
 				345E26332B0E76BD00A9EF7A /* Views */,
 			);
 			path = Common;
@@ -157,6 +171,8 @@
 		345E26302B0E76BD00A9EF7A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				345E26652B0EA18A00A9EF7A /* Credentials.swift */,
+				345E26672B0EA19600A9EF7A /* KeychainKey.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,6 +213,7 @@
 		345E26352B0E76BD00A9EF7A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				345E265F2B0E9E7A00A9EF7A /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -211,6 +228,7 @@
 		345E26372B0E76BD00A9EF7A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				345E265D2B0E9E1F00A9EF7A /* HomeScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -303,6 +321,30 @@
 				345E260B2B0E373000A9EF7A /* AppIcon.xcassets */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		345E26612B0EA00300A9EF7A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				345E26622B0EA00C00A9EF7A /* Screens */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		345E26622B0EA00C00A9EF7A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				345E26632B0EA01E00A9EF7A /* RootScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		345E26692B0EA1F100A9EF7A /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				345E266A2B0EA20F00A9EF7A /* MainButton.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,14 +449,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				345E26232B0E41D400A9EF7A /* StringExtensions.swift in Sources */,
+				345E26602B0E9E7A00A9EF7A /* HomeViewModel.swift in Sources */,
 				345E260A2B0E372E00A9EF7A /* ContentView.swift in Sources */,
 				345E26082B0E372E00A9EF7A /* SwiftUIBlueprintApp.swift in Sources */,
+				345E26662B0EA18A00A9EF7A /* Credentials.swift in Sources */,
 				345E264D2B0E7F3D00A9EF7A /* LoginRequest.swift in Sources */,
 				345E264F2B0E7F8800A9EF7A /* LoginResponse.swift in Sources */,
 				345E26572B0E81EC00A9EF7A /* LoginScreen.swift in Sources */,
+				345E265E2B0E9E1F00A9EF7A /* HomeScreen.swift in Sources */,
+				345E26682B0EA19600A9EF7A /* KeychainKey.swift in Sources */,
 				345E26512B0E802800A9EF7A /* LoginAction.swift in Sources */,
 				345E26532B0E812700A9EF7A /* LoginViewModel.swift in Sources */,
 				345E265C2B0E98B000A9EF7A /* Auth.swift in Sources */,
+				345E26642B0EA01E00A9EF7A /* RootScreen.swift in Sources */,
+				345E266B2B0EA20F00A9EF7A /* MainButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
