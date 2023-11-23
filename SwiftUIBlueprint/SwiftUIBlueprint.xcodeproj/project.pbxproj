@@ -27,6 +27,10 @@
 		345E26662B0EA18A00A9EF7A /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26652B0EA18A00A9EF7A /* Credentials.swift */; };
 		345E26682B0EA19600A9EF7A /* KeychainKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26672B0EA19600A9EF7A /* KeychainKey.swift */; };
 		345E266B2B0EA20F00A9EF7A /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E266A2B0EA20F00A9EF7A /* MainButton.swift */; };
+		345E266D2B0EE8F200A9EF7A /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E266C2B0EE8F200A9EF7A /* APIRequest.swift */; };
+		345E266F2B0EEC7800A9EF7A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E266E2B0EEC7800A9EF7A /* Config.swift */; };
+		345E26712B0EECFA00A9EF7A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26702B0EECFA00A9EF7A /* APIError.swift */; };
+		345E26732B0EEEEB00A9EF7A /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345E26722B0EEEEB00A9EF7A /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,10 @@
 		345E26652B0EA18A00A9EF7A /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		345E26672B0EA19600A9EF7A /* KeychainKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKey.swift; sourceTree = "<group>"; };
 		345E266A2B0EA20F00A9EF7A /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		345E266C2B0EE8F200A9EF7A /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		345E266E2B0EEC7800A9EF7A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		345E26702B0EECFA00A9EF7A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		345E26722B0EEEEB00A9EF7A /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,10 @@
 			children = (
 				345E26222B0E41D400A9EF7A /* StringExtensions.swift */,
 				345E265B2B0E98B000A9EF7A /* Auth.swift */,
+				345E266C2B0EE8F200A9EF7A /* APIRequest.swift */,
+				345E266E2B0EEC7800A9EF7A /* Config.swift */,
+				345E26702B0EECFA00A9EF7A /* APIError.swift */,
+				345E26722B0EEEEB00A9EF7A /* NetworkMonitor.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -452,6 +464,7 @@
 				345E26602B0E9E7A00A9EF7A /* HomeViewModel.swift in Sources */,
 				345E260A2B0E372E00A9EF7A /* ContentView.swift in Sources */,
 				345E26082B0E372E00A9EF7A /* SwiftUIBlueprintApp.swift in Sources */,
+				345E266F2B0EEC7800A9EF7A /* Config.swift in Sources */,
 				345E26662B0EA18A00A9EF7A /* Credentials.swift in Sources */,
 				345E264D2B0E7F3D00A9EF7A /* LoginRequest.swift in Sources */,
 				345E264F2B0E7F8800A9EF7A /* LoginResponse.swift in Sources */,
@@ -462,7 +475,10 @@
 				345E26532B0E812700A9EF7A /* LoginViewModel.swift in Sources */,
 				345E265C2B0E98B000A9EF7A /* Auth.swift in Sources */,
 				345E26642B0EA01E00A9EF7A /* RootScreen.swift in Sources */,
+				345E266D2B0EE8F200A9EF7A /* APIRequest.swift in Sources */,
+				345E26732B0EEEEB00A9EF7A /* NetworkMonitor.swift in Sources */,
 				345E266B2B0EA20F00A9EF7A /* MainButton.swift in Sources */,
+				345E26712B0EECFA00A9EF7A /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
